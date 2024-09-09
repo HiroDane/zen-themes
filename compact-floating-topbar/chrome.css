@@ -20,7 +20,7 @@
    box-shadow: var(--uc-compacttopbar-glow-color) 0px 0px 20px 10px;
    border-radius: 0px 0px 10px 10px !important;
   }
-  @media (-moz-bool-pref: "uc.topbar.float") {
+  @media (-moz-bool-pref: "uc.compacttopbar.float") {
    #nav-bar {
     border-radius: 10px 10px 10px 10px !important;
    }
@@ -40,9 +40,9 @@
   }
  }
  @media (-moz-bool-pref: "uc.compacttopbar.applyToTabBar") {
-  @media (-moz-bool-pref: "uc.topbar.glow") {
+  @media (-moz-bool-pref: "uc.compacttopbar.glow") {
    #titlebar {
-    box-shadow: var(--uc-compacttopbar-glow-color)  0px 0px 20px 10px;
+    box-shadow: var(--uc-compacttopbar-glow-color)  0px 0px 20px 10px !important;
     border-radius: 10px 10px 10px 10px !important;
    }
   }
