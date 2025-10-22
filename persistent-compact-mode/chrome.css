@@ -20,3 +20,21 @@
  }
  }
 }
+
+@media (-moz-bool-pref: "uc.persistentcompactmode.sidebar.active"){
+ @media (-moz-bool-pref: "zen.view.compact") {
+  #navigator-toolbox {
+   opacity: 1 !important;
+   transform: none !important;
+  }
+ }
+}
+
+@media (-moz-bool-pref: "uc.persistentcompactmode.topbar.active"){
+ @media (-moz-bool-pref: "zen.view.compact") {
+  #zen-appcontent-navbar-container {
+   opacity: 1 !important;
+   transform: none !important;
+  }
+ }
+}

@@ -2,16 +2,24 @@
  --uc-compacttopbar-glow-color : hsl(from var(--zen-colors-primary) h 34% 23%);
  --uc-compacttopbar-outline-color: rgb(from var(--zen-colors-primary) r g b / 50%);
 }
+[privatebrowsingmode]{
+ --uc-compacttopbar-glow-color : hsl(from var(--pbmh-private-browsing-mode-color) h 34% 23%);
+ --uc-compacttopbar-outline-color: rgb(from var(--pbmh-private-browsing-mode-border) r g b / 100%);
+}
 @media (-moz-bool-pref: "uc.compacttopbar.activate") {
 @media (-moz-bool-pref: "zen.view.compact") {
- #zen-appcontent-navbar-container {
-   align-self: center !important;
+ #zen-appcontent-navbar-wrapper {
+   margin-left: 12.5% !important;
    width: 75% !important;
    border-radius: 0px 0px 10px 10px !important;
  }
+ #nav-bar{
+  overflow:  hidden !important;
+  background: var(--zen-in-content-dialog-background) !important;
+ }
  @media (-moz-bool-pref: "uc.compacttopbar.float") {
   #zen-appcontent-navbar-container {
-   margin: 1.5vh !important;
+   margin-top: 1vh !important;
    border-radius: 10px 10px 10px 10px !important;
   }
  }
@@ -40,6 +48,10 @@
   }
  }
  @media (-moz-bool-pref: "uc.compacttopbar.applyToTabBar") {
+  #titlebar {
+   margin-left: 0.5vw !important;
+   background: var(--zen-in-content-dialog-background) !important;
+  }
   @media (-moz-bool-pref: "uc.compacttopbar.glow") {
    #titlebar {
     box-shadow: var(--uc-compacttopbar-glow-color)  0px 0px 20px 10px !important;
